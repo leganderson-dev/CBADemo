@@ -1,0 +1,2 @@
+CREATE USER [redgate] WITHOUT LOGIN
+GO
