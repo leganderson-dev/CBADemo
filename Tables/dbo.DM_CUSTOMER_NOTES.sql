@@ -4,7 +4,8 @@ CREATE TABLE [dbo].[DM_CUSTOMER_NOTES]
 [customer_firstname] [varchar] (60) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 [customer_lastname] [varchar] (60) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 [customer_notes_entry_date] [datetime] NOT NULL,
-[customer_note] [varchar] (2000) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+[customer_note] [varchar] (2000) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[status] [int] NULL
 ) ON [PRIMARY]
 GO
 CREATE UNIQUE NONCLUSTERED INDEX [cnInd1] ON [dbo].[DM_CUSTOMER_NOTES] ([customer_id], [customer_notes_entry_date]) ON [PRIMARY]
